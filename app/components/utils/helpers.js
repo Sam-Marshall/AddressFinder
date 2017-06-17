@@ -20,7 +20,7 @@ var helpers = {
       return response.data.results[0].formatted;
     });
 
-  }
+  },
 
   getAddress: function() {
     return axios.get("/api");
