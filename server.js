@@ -61,7 +61,7 @@ app.get("/api", function(req, res) {
 // This is the route we will send POST requests to save each click.
 // We will call this route the moment the "click" or "reset" button is pressed.
 app.post("/api", function(req, res) {
-  var date = req.body.date;
+
   var address = req.body.address;
   // Note how this route utilizes the findOneAndUpdate function to update the clickCount
   // { upsert: true } is an optional object we can pass into the findOneAndUpdate method
